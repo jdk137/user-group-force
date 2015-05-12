@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Force-Directed Layout</title>
+    <script src="js/d3.js"></script>
+    <script src="js/d3.geom.js"></script>
+    <script src="js/d3.layout.js"></script>
+    <script src="js/jquery-1.7.1.js"></script>
+  </head>
+  <body>
+    <div id="forceChart"></div>
+    <script type="text/javascript" src="js/friendNet.js"></script>
+    <script>
+      //FriendNet = function (container, chartWidth, chartHeight, leftLegendWidth, linkDistance, forceCharge)
+      var friendNet = new FriendNet($("#forceChart"));
+      // it will start and stop auto;
+      /*
+      setTimeout(function () {
+            friendNet.stopAnim(); //pause animation
+          }, 2000);
+      setTimeout(function () {
+            friendNet.startAnim(); //resume animation
+          }, 5000);
+      */
+    </script>
+  </body>
+</html>
